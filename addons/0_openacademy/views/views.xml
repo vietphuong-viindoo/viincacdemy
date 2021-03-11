@@ -1,0 +1,85 @@
+<odoo>
+  <data>
+     <record id="view_id" model="ir.ui.view">
+	    <field name="name">view.name</field>
+	    <field name="model">openacademy.course</field>
+	    <field name="priority" eval="16"/>
+	    <field name="arch" type="xml">
+	       <tree string="Idea list">
+			    <field name="description"/>
+			    <field name="name"/>
+			</tree>
+	    </field>
+	</record>
+	
+	<record id="course_list_action" model="ir.actions.act_window">
+            <field name="name">Courses</field>
+            <field name="res_model">openacademy.course</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first course
+                </p>
+            </field>
+     </record>
+
+
+        <menuitem id="main_openacademy_menu" name="Open Academy Root"/>
+        
+        <menuitem id="openacademy_menu" name="Course"
+                  parent="main_openacademy_menu" action="course_list_action"/>
+        
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="0_openacademy.action_window">
+      <field name="name">0_openacademy window</field>
+      <field name="res_model">0_openacademy.0_openacademy</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="0_openacademy.action_server">
+      <field name="name">0_openacademy server</field>
+      <field name="model_id" ref="model_0_openacademy_0_openacademy"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="0_openacademy" id="0_openacademy.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="0_openacademy.menu_1" parent="0_openacademy.menu_root"/>
+    <menuitem name="Menu 2" id="0_openacademy.menu_2" parent="0_openacademy.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="0_openacademy.menu_1_list" parent="0_openacademy.menu_1"
+              action="0_openacademy.action_window"/>
+    <menuitem name="Server to list" id="0_openacademy" parent="0_openacademy.menu_2"
+              action="0_openacademy.action_server"/>
+-->
+  </data>
+</odoo>
