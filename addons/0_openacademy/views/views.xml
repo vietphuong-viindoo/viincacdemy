@@ -12,6 +12,24 @@
 	    </field>
 	</record>
 	
+	
+	<record id="course_form_view" model="ir.ui.view">
+            <field name="name">course.form</field>
+            <field name="model">openacademy.course</field>
+            <field name="arch" type="xml">
+                <form string="Course Form">
+                    <sheet>
+                        <group>
+                            <field name="name" string="Đây là trường Name"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+    </record>
+	
+	
+	
 	<record id="course_list_action" model="ir.actions.act_window">
             <field name="name">Courses</field>
             <field name="res_model">openacademy.course</field>

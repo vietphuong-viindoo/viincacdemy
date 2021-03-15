@@ -82,6 +82,7 @@ Tính năng chính
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'data/openacademy_course_data.xml',
         'views/views.xml',
 #         'views/templates.xml',
         
