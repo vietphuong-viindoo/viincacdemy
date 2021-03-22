@@ -1,0 +1,6 @@
+<odoo>
+	<menuitem id="openacademy_menu" name="Open Academy" groups="0_openacademy.openacademy_group_user_lv1"/>
+
+	<menuitem id="openacademy_menu_configuration" name="Configuration"
+		parent="openacademy_menu" sequence="20" groups="0_openacademy.openacademy_group_admin"/>
+</odoo>

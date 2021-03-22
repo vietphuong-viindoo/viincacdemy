@@ -1,0 +1,20 @@
+<odoo>
+
+
+	<record id="contact_action_category" model="ir.actions.act_window">
+		<field name="name">Contact Tags</field>
+		<field name="res_model">res.partner.category</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<menuitem id="contact_cat_menu" name="Contact Tags"
+		parent="0_openacademy.openacademy_menu_configuration" action="contact_action_category" />
+
+	<record model="res.partner.category" id="teacher1">
+		<field name="name">Teacher / Level 1</field>
+	</record>
+	<record model="res.partner.category" id="teacher2">
+		<field name="name">Teacher / Level 2</field>
+	</record>
+	
+</odoo>

@@ -81,10 +81,16 @@ Tính năng chính
 
     # always loaded
     'data': [
+        'security/0_openacademy.xml',
         'security/ir.model.access.csv',
         'data/openacademy_course_data.xml',
-        'views/views.xml',
-#         'views/templates.xml',
+        'data/partner_category_data.xml',
+        'views/menu_root.xml',
+        'views/openacademy_course_views.xml',
+        'views/openacademy_session_views.xml',
+        'views/partner_views.xml',
+        'views/partner_category_views.xml',
+        'wizards/attendees_sessions_registration_views.xml',
         
     ],
     # only loaded in demonstration mode

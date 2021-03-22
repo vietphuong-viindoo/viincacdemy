@@ -1,0 +1,25 @@
+<odoo>
+	<record model="ir.ui.view" id="wizard_form_view">
+		<field name="name">attendees.sessions.registration</field>
+		<field name="model">attendees.sessions.registration</field>
+		<field name="arch" type="xml">
+			<form string="Add Attendees">
+				<group>
+					<field name="session_id" />
+					<field name="attendee_ids" />
+				</group>
+			</form>
+		</field>
+	</record>
+
+	<act_window id="attendees_sessions_registration"
+                    name="Add Attendees"
+                    binding_model="openacademy.session"
+                    res_model="attendees.sessions.registration"
+                    view_mode="form"
+                    target="new"/>
+                    
+	<menuitem id="attendees_sessions_registration_menu"
+		name="Add Attendees" parent="0_openacademy.openacademy_menu"
+		sequence="19" action="attendees_sessions_registration"/>
+</odoo>
